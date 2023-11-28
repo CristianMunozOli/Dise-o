@@ -5,15 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="ej8.js"></script>
     <title>Ej8</title>
+    <style>
+    body {
+        min-height: 500px;
+    }
+
+    #alert-dialog::backdrop {
+        background: linear-gradient(#000d, #000a);
+    }
+    </style>
 </head>
 <body>
     <dialog id="alert-dialog">
-        <h3>¡Vuelve a la sombra!</h3>
-        
+        <h3>¡Vuelve a la sombra!</h3> 
         <p>¡NO... PUEDES... PASAR!</p>
-        <button onClick="this.parentElement.close()">Ok!</button>
+        <button onClick="this.parentElement.close()">Volver</button>
       </dialog>
       
       <button id="show-button">Mostrar diálogo</button>
+      <script>
+        const showButton = document.querySelector("#show-button");
+        showButton.addEventListener("click", function () {
+             const alertDialog = document.querySelector("#alert-dialog");
+             alertDialog.showModal();
+        });
+      </script>
 </body>
 </html>
