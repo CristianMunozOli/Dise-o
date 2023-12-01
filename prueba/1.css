@@ -1,0 +1,56 @@
+/*.element:hover {
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    animation: 
+      pulse 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate;
+    border-radius: 100%;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      background-color: rgb(36, 235, 218);
+    }
+    50% {
+      background-color: rgb(90, 236, 45);
+    }
+  }
+  
+  @keyframes nudge {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    
+    50% {
+      transform: translate(150px, 0);
+    }
+    
+    80% {
+      transform: translate(-150px, 0);
+    }
+  }*/
+
+  .element {
+    background-color: black;
+    transition: background-color 4s, color 4s, font-size 3s, transform 1s cubic-bezier(0.42, 0, 0.58, 1);
+    height: 500px;
+    width: 450px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element:hover {
+    background-color: white;
+    color: rgb(228, 64, 64);
+    transform: rotate(360deg);
+    transition-delay: 1s;
+    font-size: 24px;
+}
+.invalido{
+    background-color: red;
+}
