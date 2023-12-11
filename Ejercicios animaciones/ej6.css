@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-container {
+    display: flex;
+    width: 800%; /* Ancho total de todos los elementos (4 enlaces + 4 elementos) */
+    animation: cambio 10s infinite alternate step-end;
+}
+
+.div1, .div2, .div3, .div4 {
+    flex: 0 0 25%; /* Ancho de cada elemento (25% para 4 elementos en una fila) */
+    height: 100px;
+}
+
+.div1 {
+    background-color: red;
+}
+
+.div2 {
+    background-color: yellow;
+}
+
+.div3 {
+    background-color: black;
+}
+
+.div4 {
+    background-color: green;
+}
+
+.slider {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider-link {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+}
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}

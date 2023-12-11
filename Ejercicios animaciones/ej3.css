@@ -1,0 +1,38 @@
+@layer reset;
+
+@keyframes slide {
+  0% {
+    translate: 0;
+  }
+  100% {
+    translate: calc(-100% - 100vw);
+  }
+}
+
+section {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  background: rgba(46, 42, 181, 0.45);
+  min-height: 100vh;
+  padding: 1em clamp(1rem, 2vw, 4vw);
+  backdrop-filter: grayscale(100%);
+}
+
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+}
