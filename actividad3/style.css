@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+h2{
+    font-size: 5em;
+}
+.portada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+}
+  .animated-1 {
+    margin: auto;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    scale: 1;
+    animation: funcion 5s;
+    /*transition: opacity 5s, transform 10s;*/
+  }
+
+  .animated-2 {
+    animation-fill-mode: forwards;
+    margin: auto;
+    opacity: 0;
+    scale: 2;
+    animation: funcion 5s 5s;
+  }
+
+  @keyframes funcion {
+    from{
+        
+        opacity:1;
+        scale:2;
+        color:blue;
+    }
+    to{
+        
+        opacity:0;
+        scale:0;
+        color:red;
+    }
+  }

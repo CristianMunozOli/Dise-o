@@ -18,24 +18,24 @@
     .animated-1 {
       opacity: 1;
       transform: translateY(20px);
-      transition: opacity 5.8s, transform 5.8s;
+      transition: opacity 4s, transform 4s;
     }
 
     .animated-2 {
       opacity: 0;
       transform: translateY(20px);
-      transition: opacity 5.8s, transform 5.8s;
+      transition: opacity 4s, transform 4s;
     }
   </style>
 </head>
 <body>
 
 <div class="animated-1" id="animatedText1">
-  <h1>Bienvenido a mi Página Web</h1>
+  <h1>Bienvenido a ...</h1>
 </div>
 
 <div class="animated-2" id="animatedText2">
-  <h1>OLEEEE</h1>
+  <h1>Disfruta</h1>
 </div>
 
 <script>
@@ -47,13 +47,13 @@
     setTimeout(function () {
       animatedText1.style.opacity = '0';
       animatedText1.style.transform = 'translateY(0)';
-    }, 5000);
+    }, 1000);
 
     // Después de que termine la animación del primer div, inicia la animación del segundo div
     setTimeout(function () {
       animatedText2.style.opacity = '1';
       animatedText2.style.transform = 'translateY(0)';
-    }, 6400); // El tiempo total de espera es 500ms (del primer div) + 5900ms (duración total de la animación del primer div)
+    }, 5000); // El tiempo total de espera es 500ms (del primer div) + 5900ms (duración total de la animación del primer div)
   });
 </script>
 
