@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/comunAnadir.css">
+    <link rel="stylesheet" href="../css/anadirCasa.css">
+   
+    <title>Añadir casa</title>
+</head>
+<body>
+    <header>
+        <img src="../img/rsz_2logo.png" alt="">
+        <h1>Casas rurales busca tu paz<br><span>te da la bienvenida:<br>usuario</span></h1>
+        <img src="../img/rsz_2logo.png" alt="">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="anadirCasa.html">Nueva casa</a></li>
+            <li><a href="listadoCasas.html">Lista de casas</a></li>
+            <li><a href="anadirUsuario.html">Nuevo usuario</a></li>
+        </ul>
+    
+    </nav>
+    <main>
+        <h2>AÑADIR CASA</h2>
+        <form action="">
+            <label for="tipoCasa">Tipo de casa</label>
+            <input type="text" name="tipoCasa" id="tipoCasa">
+            <label for="disponibilidad">Disponibilidad</label>
+            <input type="checkbox" name="disponibilidad" id="disponibilidad"value="disponible">
+            <label for="numHabitaciones">Nº de habitaciones</label>
+            <input type="number" class="inputPeque"name="numHabitaciones" id="nHabitaciones">
+            <label for="tarifa">Tarifa</label>
+            <input type="number" name="tarifa" id="tarifa">
+            <label for="ubicacion">Ubicación</label>
+            <input type="text"name="ubicacion" id="ubicacion">
+            <label for="localidad">Localidad</label>
+            <input type="text"class="inputMasGrande" name="localidad" id="localidad">
+            <label for="provincia">Provincia</label>
+            <input type="text" class="inputMasGrande"name="provincia" id="provincia">
+            <label for="descripcion" id="textoDescripcion">Descripción</label>
+            <textarea name="textarea"  name="descripcion" id="descripcion">Descripción de la vivienda detallada.</textarea>
+            <label for="subirImagen">Subir imágen:</label>
+            <input type="file" class="width70"name="subirImagen">
+            <input type="submit" class="boton"value="AÑADIR">
+        </form>
+    </main>
+    <aside>
+    </aside>
+</body>
+</html>

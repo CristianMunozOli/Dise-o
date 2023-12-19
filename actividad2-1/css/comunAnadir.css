@@ -1,0 +1,144 @@
+/*CSS compartido de anadirCasa y listadoCasas*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+
+:root{
+    --colorFondoPagina:#C8E4B2;
+    --colorBoton:#FFC804;
+    --colorTituloH2: #EC6408; 
+}
+/*  Selector universal*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: grid;
+    grid-template-areas:
+    'header header header header header'
+    'nav main main main aside';
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: var(--colorFondoPagina);
+    height: 100%;
+}
+header img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    
+}
+/*  Selector de tipo*/
+h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #8000A4;
+    text-align: center;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 3em;
+}
+/*  Selector hijo*/
+h1>span{
+    
+    font-size: 0.5em;
+}
+nav{
+    grid-area: nav;
+    background-color: var(--colorFondoPagina);
+}
+nav>ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+    margin-top: 50%;
+}
+/*  Selector descendiente*/
+nav li{
+    list-style: none;
+    background-color: var(--colorBoton);
+    border-radius: 25px;
+    text-align: center;
+    width: 80%;
+    padding: 10px 0px;
+}
+nav a{
+    text-decoration: none;
+}
+/*Selector con pseudoclases*/
+nav a:hover{
+    color: var(--colorBoton);
+}
+nav li:hover{
+    background-color: var(--colorTituloH2);
+}
+/*  Selector de clase*/
+.boton{
+    border-radius: 25px;
+    padding: 5px;
+    border: none;
+    background-color: var(--colorTituloH2);
+    margin: auto;
+}
+.boton:hover{
+    background-color: var(--colorBoton);
+    box-shadow: 3px 5px 4px var(--colorTituloH2) ;
+}
+
+main{
+    grid-area: main;
+    font-family: Roboto;
+}
+main h2{
+    color: var(--colorTituloH2);
+    font-family: Alice;
+    font-size: 2em;
+    margin: 20px;
+    text-align: center;
+}
+aside{
+    grid-area: aside;
+    background-color: var(--colorFondoPagina);
+    width: 100%;
+    
+    
+}
+@media (max-width: 700px) {
+    body{
+         display: grid;
+         grid-template-areas:
+         'header header header header'
+         'nav main main main' ;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+     header{
+         grid-template-columns: 1fr 3fr;
+     }
+     header img:last-child{
+         display: none;
+     }
+     h1{
+         font-size: 2em;
+     }
+     h1>span{
+         
+         font-size: 0.5em;
+     }
+     aside{
+         display: none;
+     }
+     label{
+        font-size: 0.8em;
+    }
+}

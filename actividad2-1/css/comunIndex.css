@@ -1,0 +1,71 @@
+/*CSS compartido de index y anadirUsuario*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+:root{
+    --colorFondoPagina:#C8E4B2;
+    --colorBoton:#FFC804;
+    --colorTituloH2: #EC6408; 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h1{
+    color: #8000A4;
+    margin: 10% 0%;
+    text-align: center;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 5em;
+}
+main>section:first-of-type{
+    height:100vh;
+}
+main>section:first-of-type>img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    
+}
+main>section:last-of-type{
+    background-color: var(--colorFondoPagina);
+    padding: 0px 20px;
+
+}
+form input{
+    border-radius: 25px;
+    
+    padding-left: 10px;
+}
+@media (max-width: 700px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 35% 65%;
+    }
+    main>section:first-of-type>img{
+        width: 100%;
+        height: 60%;
+        object-fit: fill;
+        
+    }
+    h1{
+        display: none;
+    }
+    #formularioInicio{
+        margin-top: 10%;
+        align-items: center;
+        font-size: 1em;
+    }
+    #formularioInicio>div{
+        gap:5%;
+
+    }
+}

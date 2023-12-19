@@ -1,0 +1,55 @@
+h1{
+    font-size: 2.9em;
+}
+h1>span{
+    font-size: 0.8em;
+}
+.tituloH2{
+    color: var(--colorTituloH2);
+    font-family: Alice;
+    font-size: 2em;
+    margin: 20px;
+    text-align: center;
+}
+#formularioRegistroUsuario{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin: auto;
+    gap: 10px;
+}
+.textoFormulario{
+    font-family: Roboto;
+    font-size: 1.2em;
+}
+label{
+    margin-right: 15px;
+}
+#nombre,#apellidos,#email{
+    width: 75%;
+}
+#fechaNacimiento{
+    width: 55%;
+}
+#contrasena{
+    width: 70%;
+}
+#formularioRegistroUsuario>div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.botonesFormulario{
+    background-color: #EC6408;
+    border-radius: 25px; 
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10%;
+    width: 8em;  
+    height: 2em;
+}
+.botonesFormulario:hover{
+    background-color: var(--colorBoton);
+    box-shadow: 3px 5px 4px var(--colorTituloH2) ;
+}

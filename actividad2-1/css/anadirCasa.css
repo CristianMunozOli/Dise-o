@@ -1,0 +1,46 @@
+
+main form{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 10px;
+    font-family: Roboto;
+    font-size: 1.2em;
+    width: 445px;
+    margin: auto;
+}
+input{
+    width: 20%;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+.inputPeque{
+    width: 30px;
+
+}
+.inputMasGrande{
+    width: 25%;
+}
+.width70{
+    width: 70%;
+}
+/*  Selector por id*/
+#ubicacion{
+    flex-grow: 1;
+    width: 60%;
+}
+#textoDescripcion{
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+
+    form{
+        
+        flex-direction: column;   
+        align-items: center;   
+    }
+}
