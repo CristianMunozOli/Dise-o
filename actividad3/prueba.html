@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Definir la animación */
+        @keyframes rotateAnimation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Estilo del div a animar */
+        .rotating-div {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            margin: 50px;
+            /* Aplicar la animación al div */
+            animation: rotateAnimation 4s linear infinite; /* 4 segundos, lineal, infinito */
+        }
+    </style>
+    <title>Animación de Rotación</title>
+</head>
+<body>
+
+    <div class="rotating-div"></div>
+
+</body>
+</html>
