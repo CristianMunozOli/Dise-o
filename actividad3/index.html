@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
+    <script src="script.js"></script>
     <title>TodoMusic</title>
 </head>
 <body>
@@ -603,38 +603,73 @@
                 <div class="slider">
                     <ul>
                       <li>
-                        <img src="imagenes/queen.jpg" alt="">
+                        <img src="imagenes/hip-hop.png" alt="">
                       </li>
                       <li>
-                        <img src="imagenes/michael_jackson.jpg" alt="">
+                        <img src="imagenes/musicaChillOut.jpg" alt="">
                       </li>
                       <li>
-                        <img src="imagenes/snoop.jpg" alt="">
+                        <img src="imagenes/musicaDowntempo.jpg" alt="">
                       </li>
                       <li>
-                        <img src="imagenes/eminem.jpg" alt="">
+                        <img src="imagenes/musicaInstrumental.jpg" alt="">
                       </li>
                     </ul>
                   </div>
             </section>  
-        </section>
-        <section class="temasMusica">
-            <section class="rap" id="">
-                <div>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-                <div>
-                  <img src="" alt="">
-                </div>
-            </section>  
-            <section class="relajante" id="">
-                
-            </section>  
-        </section>
+        </section>  
+         <section class="rap disco" id="">
+            <div>
+               <h2>HIP HOP - RAP</h2>
+               <img src="imagenes/hip-hop.png" alt="">
+            </div>
+
+            <ul>
+               <li>
+                  <img src="imagenes/musica-We-be-Clubbin.jpg" alt="">
+                  <div>
+                     <h3>DJ-Jimmy Singh We be Clubbin</h3>
+                     <p>Compositor: </p>
+                     <audio class="audioRap" id="audio1" controls autoplay onplay="detenerOtrosAudios('audio1')">
+                        <source src="horse.ogg" type="audio/ogg">
+                        <source src="musica/rap/musica-DJ-Jimmy-Singh-We-be-Clubbin.mp3" type="audio/mpeg">
+                        <source src=".wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                     </audio>
+                  </div>
+               </li>
+               <li>
+                  <img src="imagenes/musica-We-be-Clubbin.jpg" alt="">
+                  <div>
+                     <p>DJ-Jimmy Singh We be Clubbin</p>
+                     <audio class="audioRap" id="audio2" controls autoplay onplay="detenerOtrosAudios('audio2')">
+                        <source src="horse.ogg" type="audio/ogg">
+                        <source src="musica/rap/musica-DJ-Jimmy-Singh-We-be-Clubbin.mp3" type="audio/mpeg">
+                        <source src=".wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                     </audio>
+                  </div>
+               </li>
+               <li>
+                  <img src="imagenes/musica-We-be-Clubbin.jpg" alt="">
+                  <div>
+                     <p>DJ-Jimmy Singh We be Clubbin</p>
+                     <audio class="audioRap" id="audio3" controls autoplay onplay="detenerOtrosAudios('audio3')">
+                        <source src="horse.ogg" type="audio/ogg">
+                        <source src="musica/rap/musica-DJ-Jimmy-Singh-We-be-Clubbin.mp3" type="audio/mpeg">
+                        <source src=".wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                     </audio>
+                  </div>
+               </li>
+            </ul>
+
+               
+         </section>  
+         <section class="relajante disco" id="">
+              
+         </section> 
+          
     </main>
 </body>
 </html>
