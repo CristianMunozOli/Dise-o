@@ -1,34 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Definir la animación */
-        @keyframes rotateAnimation {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      height: 200vh; /* Hacer el cuerpo de la página más alto para permitir el desplazamiento */
+      margin: 0;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory; /* Activar el desplazamiento obligatorio en el eje Y */
+    }
 
-        /* Estilo del div a animar */
-        .rotating-div {
-            width: 100px;
-            height: 100px;
-            background-color: #3498db;
-            margin: 50px;
-            /* Aplicar la animación al div */
-            animation: rotateAnimation 4s linear infinite; /* 4 segundos, lineal, infinito */
-        }
-    </style>
-    <title>Animación de Rotación</title>
+    section {
+      height: 100vh; /* Cada sección ocupa el 100% de la altura de la ventana */
+      scroll-snap-align: start; /* Hacer que cada sección se ajuste al inicio del área de desplazamiento */
+    }
+
+    @scroll-timeline scroll {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      animation: scroll 0.5s ease-in-out; /* Asociar la animación al timeline de desplazamiento */
+    }
+  </style>
+  <title>Scroll Timeline Example</title>
 </head>
 <body>
-
-    <div class="rotating-div"></div>
-
+  <section>Section 1</section>
+  <section>Section 2</section>
+  <section>Section 3</section>
 </body>
 </html>
